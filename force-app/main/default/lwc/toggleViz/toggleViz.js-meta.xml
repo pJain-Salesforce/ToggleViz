@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Toggle Viz</masterLabel>
+    <targets>
+        <target>analytics__Dashboard</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="analytics__Dashboard">
+            <property name="parentToggle" type="String" label="Parent Toggle" description="Parent Toggle Id" required="true" default="Toggle_1"/>
+            <property name="childToggle" type="String" label="Child Toggle" description="Child Toggle Id" required="true" default="Toggle_2"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
